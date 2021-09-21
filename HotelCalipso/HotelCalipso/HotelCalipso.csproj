@@ -43,13 +43,20 @@
       <HintPath>..\..\..\..\..\PcWonderland.com_Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\SMDMySQLDBManager\MySql.Data.DLL</HintPath>
+    </Reference>
     <Reference Include="SMDLogic">
       <HintPath>..\..\DLLS\SMDLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="SMDMySQLDBManager">
+      <HintPath>..\..\..\SMDMySQLDBManager.dll</HintPath>
     </Reference>
     <Reference Include="SMDnotify">
       <HintPath>..\..\DLLS\SMDnotify.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBManagercs.cs" />
     <Compile Include="frmAdminMain.cs">
       <SubType>Form</SubType>
     </Compile>
