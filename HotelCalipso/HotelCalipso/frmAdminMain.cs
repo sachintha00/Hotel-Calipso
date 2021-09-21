@@ -37,5 +37,15 @@ namespace HotelCalipso
         {
             SMDChildFormOpen.Open(new frmFood(), pnlChildForm, Color.FromArgb(251, 251, 250));
         }
+
+        private void btnTravel_Click(object sender, EventArgs e)
+        {
+            SMDChildFormOpen.Open(new frmTravel(), pnlChildForm, Color.FromArgb(251, 251, 250));
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            SMDChildFormOpen.Open(new frmReport(), pnlChildForm, Color.FromArgb(251, 251, 250));
+        }
     }
 }

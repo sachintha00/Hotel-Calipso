@@ -17,3 +17,4 @@ E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\SMDno
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmRegister.resources
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmRoom.resources
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmFood.resources
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\Guna.UI.dll

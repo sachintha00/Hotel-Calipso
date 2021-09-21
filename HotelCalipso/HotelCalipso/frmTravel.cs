@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace HotelCalipso
 {
-    public partial class frmRoom : Form
+    public partial class frmTravel : Form
     {
-        public frmRoom()
+        public frmTravel()
         {
             InitializeComponent();
-        }
-
-        private void frmRoom_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

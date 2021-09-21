@@ -37,8 +37,8 @@
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
             this.btnRooms = new Guna.UI2.WinForms.Guna2Button();
             this.btnFood = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTravel = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReport = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,8 +62,8 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
-            this.guna2Panel1.Controls.Add(this.guna2Button4);
+            this.guna2Panel1.Controls.Add(this.btnReport);
+            this.guna2Panel1.Controls.Add(this.btnTravel);
             this.guna2Panel1.Controls.Add(this.btnFood);
             this.guna2Panel1.Controls.Add(this.btnRooms);
             this.guna2Panel1.Controls.Add(this.btnRegister);
@@ -139,39 +139,41 @@
             this.btnFood.Text = "FOODS";
             this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
-            // guna2Button4
+            // btnTravel
             // 
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.Image")));
-            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(63, 507);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(234, 57);
-            this.guna2Button4.TabIndex = 0;
-            this.guna2Button4.Text = "TRAVEL PACKAGE";
+            this.btnTravel.CheckedState.Parent = this.btnTravel;
+            this.btnTravel.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.Image")));
+            this.btnTravel.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnTravel.CustomImages.Parent = this.btnTravel;
+            this.btnTravel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnTravel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnTravel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnTravel.HoverState.Parent = this.btnTravel;
+            this.btnTravel.Location = new System.Drawing.Point(63, 507);
+            this.btnTravel.Name = "btnTravel";
+            this.btnTravel.ShadowDecoration.Parent = this.btnTravel;
+            this.btnTravel.Size = new System.Drawing.Size(234, 57);
+            this.btnTravel.TabIndex = 0;
+            this.btnTravel.Text = "TRAVEL PACKAGE";
+            this.btnTravel.Click += new System.EventHandler(this.btnTravel_Click);
             // 
-            // guna2Button5
+            // btnReport
             // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.CustomImages.Image")));
-            this.guna2Button5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(63, 586);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(234, 57);
-            this.guna2Button5.TabIndex = 0;
-            this.guna2Button5.Text = "REPORTS";
+            this.btnReport.CheckedState.Parent = this.btnReport;
+            this.btnReport.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.CustomImages.Image")));
+            this.btnReport.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReport.CustomImages.Parent = this.btnReport;
+            this.btnReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnReport.HoverState.Parent = this.btnReport;
+            this.btnReport.Location = new System.Drawing.Point(63, 586);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.ShadowDecoration.Parent = this.btnReport;
+            this.btnReport.Size = new System.Drawing.Size(234, 57);
+            this.btnReport.TabIndex = 0;
+            this.btnReport.Text = "REPORTS";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // bunifuDragControl1
             // 
@@ -204,8 +206,8 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel pnlChildForm;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnReport;
+        private Guna.UI2.WinForms.Guna2Button btnTravel;
         private Guna.UI2.WinForms.Guna2Button btnFood;
         private Guna.UI2.WinForms.Guna2Button btnRooms;
         private Guna.UI2.WinForms.Guna2Button btnRegister;
