@@ -1,6 +1,6 @@
 ﻿namespace HotelCalipso
 {
-    partial class frmRoom
+    partial class frmFood
     {
         /// <summary>
         /// Required designer variable.

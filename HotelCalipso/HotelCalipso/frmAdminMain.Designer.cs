@@ -36,7 +36,7 @@
             this.pnlChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
             this.btnRooms = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFood = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -64,7 +64,7 @@
             // 
             this.guna2Panel1.Controls.Add(this.guna2Button5);
             this.guna2Panel1.Controls.Add(this.guna2Button4);
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
+            this.guna2Panel1.Controls.Add(this.btnFood);
             this.guna2Panel1.Controls.Add(this.btnRooms);
             this.guna2Panel1.Controls.Add(this.btnRegister);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -121,22 +121,23 @@
             this.btnRooms.Text = "ROOMS";
             this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
-            // guna2Button3
+            // btnFood
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.Image")));
-            this.guna2Button3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(63, 428);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(234, 57);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "FOODS";
+            this.btnFood.CheckedState.Parent = this.btnFood;
+            this.btnFood.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.Image")));
+            this.btnFood.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnFood.CustomImages.Parent = this.btnFood;
+            this.btnFood.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnFood.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnFood.HoverState.Parent = this.btnFood;
+            this.btnFood.Location = new System.Drawing.Point(63, 428);
+            this.btnFood.Name = "btnFood";
+            this.btnFood.ShadowDecoration.Parent = this.btnFood;
+            this.btnFood.Size = new System.Drawing.Size(234, 57);
+            this.btnFood.TabIndex = 0;
+            this.btnFood.Text = "FOODS";
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // guna2Button4
             // 
@@ -205,7 +206,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnFood;
         private Guna.UI2.WinForms.Guna2Button btnRooms;
         private Guna.UI2.WinForms.Guna2Button btnRegister;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
