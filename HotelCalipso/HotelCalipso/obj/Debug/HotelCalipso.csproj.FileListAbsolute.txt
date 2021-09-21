@@ -12,3 +12,7 @@ E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\Hotel
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.csproj.CopyComplete
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.exe
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.pdb
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\SMDLogic.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\SMDnotify.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmRegister.resources
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmRoom.resources

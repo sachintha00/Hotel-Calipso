@@ -1,6 +1,6 @@
 ﻿namespace HotelCalipso
 {
-    partial class frmRegister
+    partial class frmRoom
     {
         /// <summary>
         /// Required designer variable.
@@ -65,9 +65,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
             this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 51);
+            this.label1.Size = new System.Drawing.Size(173, 51);
             this.label1.TabIndex = 2;
-            this.label1.Text = "REGISTRATION";
+            this.label1.Text = "ROOMS";
             // 
             // guna2TextBox1
             // 
@@ -220,7 +220,7 @@
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "SUBMIT";
             // 
-            // frmRegister
+            // frmRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -237,7 +237,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmRegister";
+            this.Name = "frmRoom";
             this.Text = "frmRegister";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminMain));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRooms = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(1241, -1);
@@ -60,16 +60,12 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(76, 42);
             this.guna2ControlBox1.TabIndex = 0;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = null;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2Button5);
             this.guna2Panel1.Controls.Add(this.guna2Button4);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.btnRooms);
             this.guna2Panel1.Controls.Add(this.btnRegister);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -107,22 +103,23 @@
             this.btnRegister.Text = "REGISTRATION";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // guna2Button2
+            // btnRooms
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.Image")));
-            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(63, 349);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(234, 57);
-            this.guna2Button2.TabIndex = 0;
-            this.guna2Button2.Text = "ROOMS";
+            this.btnRooms.CheckedState.Parent = this.btnRooms;
+            this.btnRooms.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.Image")));
+            this.btnRooms.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnRooms.CustomImages.Parent = this.btnRooms;
+            this.btnRooms.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnRooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnRooms.HoverState.Parent = this.btnRooms;
+            this.btnRooms.Location = new System.Drawing.Point(63, 349);
+            this.btnRooms.Name = "btnRooms";
+            this.btnRooms.ShadowDecoration.Parent = this.btnRooms;
+            this.btnRooms.Size = new System.Drawing.Size(234, 57);
+            this.btnRooms.TabIndex = 0;
+            this.btnRooms.Text = "ROOMS";
+            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
             // guna2Button3
             // 
@@ -175,6 +172,13 @@
             this.guna2Button5.TabIndex = 0;
             this.guna2Button5.Text = "REPORTS";
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // frmAdminMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,6 +189,7 @@
             this.Controls.Add(this.guna2ControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdminMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdminMain";
             this.Load += new System.EventHandler(this.frmAdminMain_Load);
             this.guna2Panel1.ResumeLayout(false);
@@ -196,13 +201,13 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel pnlChildForm;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnRooms;
         private Guna.UI2.WinForms.Guna2Button btnRegister;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
