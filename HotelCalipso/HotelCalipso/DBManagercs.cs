@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
+
 namespace HotelCalipso
 {
     public class DBManagercs
     {
-        
     }
 }

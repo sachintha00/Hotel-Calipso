@@ -16,5 +16,10 @@ namespace HotelCalipso
         {
             InitializeComponent();
         }
+
+        private void frmFood_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

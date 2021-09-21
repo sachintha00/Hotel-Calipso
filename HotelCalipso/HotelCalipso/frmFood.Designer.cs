@@ -70,6 +70,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFood";
             this.Text = "frmRegister";
+            this.Load += new System.EventHandler(this.frmFood_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
