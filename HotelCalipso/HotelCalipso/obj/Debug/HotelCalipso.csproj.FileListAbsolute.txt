@@ -1,0 +1,14 @@
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\HotelCalipso.exe.config
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\HotelCalipso.exe
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\HotelCalipso.pdb
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\Guna.UI2.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.csprojAssemblyReference.cache
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmAdminMain.resources
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmLogin.resources
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.Properties.Resources.resources
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.csproj.GenerateResource.cache
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.csproj.CoreCompileInputs.cache
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.csproj.CopyComplete
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.exe
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.pdb
