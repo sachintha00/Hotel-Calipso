@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
 namespace HotelCalipso
 {
@@ -15,6 +16,16 @@ namespace HotelCalipso
         public frmAdminMain()
         {
             InitializeComponent();
+        }
+
+        private void frmAdminMain_Load(object sender, EventArgs e)
+        {
+            SMDChildFormOpen.Open(new frmRegister(), pnlChildForm, Color.FromArgb(251, 251, 250));
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            SMDChildFormOpen.Open(new frmRegister(), pnlChildForm, Color.FromArgb(251, 251, 250));
         }
     }
 }

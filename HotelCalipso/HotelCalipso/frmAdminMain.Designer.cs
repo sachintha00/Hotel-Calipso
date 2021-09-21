@@ -34,8 +34,8 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlChildForm = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -70,7 +70,7 @@
             this.guna2Panel1.Controls.Add(this.guna2Button4);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btnRegister);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -78,33 +78,34 @@
             this.guna2Panel1.Size = new System.Drawing.Size(351, 797);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // guna2Panel2
+            // pnlChildForm
             // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.Location = new System.Drawing.Point(357, 50);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(949, 735);
-            this.guna2Panel2.TabIndex = 2;
+            this.pnlChildForm.Location = new System.Drawing.Point(357, 50);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.ShadowDecoration.Parent = this.pnlChildForm;
+            this.pnlChildForm.Size = new System.Drawing.Size(949, 735);
+            this.pnlChildForm.TabIndex = 2;
             // 
-            // guna2Button1
+            // btnRegister
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.Image")));
-            this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(63, 270);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(234, 57);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "REGISTRATION";
+            this.btnRegister.CheckedState.Parent = this.btnRegister;
+            this.btnRegister.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.Image")));
+            this.btnRegister.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnRegister.CustomImages.Parent = this.btnRegister;
+            this.btnRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnRegister.HoverState.Parent = this.btnRegister;
+            this.btnRegister.Location = new System.Drawing.Point(63, 270);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.ShadowDecoration.Parent = this.btnRegister;
+            this.btnRegister.Size = new System.Drawing.Size(234, 57);
+            this.btnRegister.TabIndex = 0;
+            this.btnRegister.Text = "REGISTRATION";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // guna2Button2
             // 
@@ -179,12 +180,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 797);
-            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.pnlChildForm);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdminMain";
             this.Text = "frmAdminMain";
+            this.Load += new System.EventHandler(this.frmAdminMain_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -195,12 +197,12 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel pnlChildForm;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnRegister;
     }
 }
