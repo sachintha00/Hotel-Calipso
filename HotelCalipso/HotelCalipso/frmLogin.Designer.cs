@@ -235,8 +235,8 @@
             this.ClientSize = new System.Drawing.Size(888, 696);
             this.Controls.Add(this.gunaControlBox1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);

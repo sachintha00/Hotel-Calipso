@@ -18,6 +18,7 @@ namespace HotelCalipso
         public frmLogin()
         {
             InitializeComponent();
+            txtUsername.Focus();
             dbManager = new SmdDbManager("SERVER=127.0.0.1;PORT=3306;DATABASE=hotelcalipso;UID=root;PASSWORD=;");
         }
 
