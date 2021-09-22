@@ -57,6 +57,30 @@ namespace HotelCalipso
                 }
             }
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUsername.Text))
+                Validation.texBoxValidate(true, txtUsername, lblUsername);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtEmail.Text))
+                Validation.texBoxValidate(true, txtEmail, lblEmail);
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtPassword.Text))
+                Validation.texBoxValidate(true, txtPassword, lblPassword);
+        }
+
+        private void txtCpassword_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtCpassword.Text))
+                Validation.texBoxValidate(true, txtCpassword, lblCpassword);
+        }
     }
 
 }

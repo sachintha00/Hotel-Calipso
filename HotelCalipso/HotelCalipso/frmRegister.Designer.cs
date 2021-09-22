@@ -132,6 +132,7 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(263, 44);
             this.txtUsername.TabIndex = 8;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtEmail
             // 
@@ -148,6 +149,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(263, 44);
             this.txtEmail.TabIndex = 8;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPassword
             // 
@@ -164,6 +166,7 @@
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(263, 44);
             this.txtPassword.TabIndex = 8;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtCpassword
             // 
@@ -180,6 +183,7 @@
             this.txtCpassword.SelectedText = "";
             this.txtCpassword.Size = new System.Drawing.Size(263, 44);
             this.txtCpassword.TabIndex = 8;
+            this.txtCpassword.TextChanged += new System.EventHandler(this.txtCpassword_TextChanged);
             // 
             // lblUsername
             // 
