@@ -51,10 +51,9 @@ namespace HotelCalipso
             else
             {
                 int i = dbManager.insrtUpdteDelt("INSERT INTO " +
-                                                "`roombo0king`" +
-                                                "(`firstname`, `lastname`, `email`, `city`, `mobile`, `roomtype`, `bedtype`, `nofroom`, `mealplan`) " +
-                                                "VALUES " +
-                                                "('" + txtFirstname.Text + "','" + txtLastname.Text + "','" + txtEmail.Text + "','" + txtCity.Text + "','" + txtMobile.Text + "','" + cmbRoomType.SelectedItem.ToString() + "','" + cmbBedType.SelectedItem.ToString() + "', '" + txtTotalRoom.Text + "', '" + cmbMealplan.SelectedItem.ToString() + "')");
+                                                "`travel_package`" +
+                                                "(`fullname`, `nic`, `email`, `nationality`, `mobile`, `typeOfplace`) " +
+                                                "VALUES ('"+txtFullname.Text+"','"+txtNic.Text+"','"+txtEmail.Text+"','"+cmbNational.SelectedItem.ToString()+"','"+txtMobile.Text+"','"+cmbTravel.SelectedItem.ToString()+"')");
 
                 if (i != 0)
                 {
@@ -68,6 +67,12 @@ namespace HotelCalipso
                     Alert.Show("success", "added success", Alert.AlertType.success, Color.FromArgb(240, 240, 240));
                 }
             }
+        }
+
+        private void txtFullname_TextChanged(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(txtFullname.Text))
+                Validation.texBoxValidate(true, txtEmail, lblEmail);
         }
     }
 }

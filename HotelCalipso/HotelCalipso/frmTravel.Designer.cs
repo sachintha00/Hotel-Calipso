@@ -186,6 +186,7 @@
             this.txtFullname.SelectedText = "";
             this.txtFullname.Size = new System.Drawing.Size(263, 44);
             this.txtFullname.TabIndex = 12;
+            this.txtFullname.TextChanged += new System.EventHandler(this.txtFullname_TextChanged);
             // 
             // txtNic
             // 
