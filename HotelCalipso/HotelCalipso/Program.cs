@@ -16,7 +16,7 @@ namespace HotelCalipso
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdminMain());
+            Application.Run(new frmLogin());
         }
     }
 }

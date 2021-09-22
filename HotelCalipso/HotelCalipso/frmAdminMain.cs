@@ -47,5 +47,10 @@ namespace HotelCalipso
         {
             SMDChildFormOpen.Open(new frmReport(), pnlChildForm, Color.FromArgb(251, 251, 250));
         }
+
+        private void gunaControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

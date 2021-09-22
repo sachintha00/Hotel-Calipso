@@ -217,7 +217,7 @@
             this.txtFirstname.BorderColor = System.Drawing.Color.Silver;
             this.txtFirstname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstname.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtFirstname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtFirstname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtFirstname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtFirstname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFirstname.Location = new System.Drawing.Point(39, 206);
@@ -233,7 +233,7 @@
             this.txtLastname.BorderColor = System.Drawing.Color.Silver;
             this.txtLastname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastname.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtLastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtLastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtLastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtLastname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLastname.Location = new System.Drawing.Point(447, 206);
@@ -259,7 +259,7 @@
             this.txtNic.BorderColor = System.Drawing.Color.Silver;
             this.txtNic.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNic.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtNic.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtNic.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtNic.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNic.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNic.Location = new System.Drawing.Point(39, 323);
@@ -285,7 +285,7 @@
             this.txtEmail.BorderColor = System.Drawing.Color.Silver;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.Location = new System.Drawing.Point(447, 323);
@@ -311,7 +311,7 @@
             this.txtCity.BorderColor = System.Drawing.Color.Silver;
             this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCity.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtCity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCity.Location = new System.Drawing.Point(39, 440);
@@ -337,7 +337,7 @@
             this.txtMobile.BorderColor = System.Drawing.Color.Silver;
             this.txtMobile.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMobile.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMobile.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtMobile.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtMobile.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMobile.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMobile.Location = new System.Drawing.Point(447, 440);
@@ -363,7 +363,7 @@
             this.txtTotalRoom.BorderColor = System.Drawing.Color.Silver;
             this.txtTotalRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotalRoom.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtTotalRoom.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtTotalRoom.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.txtTotalRoom.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTotalRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTotalRoom.Location = new System.Drawing.Point(39, 557);
@@ -386,13 +386,13 @@
             // cmbRoomType
             // 
             this.cmbRoomType.BackColor = System.Drawing.Color.Transparent;
-            this.cmbRoomType.BaseColor = System.Drawing.Color.White;
+            this.cmbRoomType.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.cmbRoomType.BorderColor = System.Drawing.Color.Silver;
             this.cmbRoomType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRoomType.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbRoomType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbRoomType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbRoomType.ForeColor = System.Drawing.Color.Black;
+            this.cmbRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbRoomType.FormattingEnabled = true;
             this.cmbRoomType.Items.AddRange(new object[] {
             "Type 1",
@@ -401,8 +401,8 @@
             "Type 4"});
             this.cmbRoomType.Location = new System.Drawing.Point(447, 570);
             this.cmbRoomType.Name = "cmbRoomType";
-            this.cmbRoomType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbRoomType.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbRoomType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.cmbRoomType.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbRoomType.Size = new System.Drawing.Size(263, 31);
             this.cmbRoomType.TabIndex = 12;
             // 
@@ -429,13 +429,13 @@
             // cmbBedType
             // 
             this.cmbBedType.BackColor = System.Drawing.Color.Transparent;
-            this.cmbBedType.BaseColor = System.Drawing.Color.White;
+            this.cmbBedType.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.cmbBedType.BorderColor = System.Drawing.Color.Silver;
             this.cmbBedType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBedType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBedType.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBedType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbBedType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbBedType.ForeColor = System.Drawing.Color.Black;
+            this.cmbBedType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbBedType.FormattingEnabled = true;
             this.cmbBedType.Items.AddRange(new object[] {
             "Type 1",
@@ -444,8 +444,8 @@
             "Type 4"});
             this.cmbBedType.Location = new System.Drawing.Point(39, 693);
             this.cmbBedType.Name = "cmbBedType";
-            this.cmbBedType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbBedType.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbBedType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.cmbBedType.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbBedType.Size = new System.Drawing.Size(263, 31);
             this.cmbBedType.TabIndex = 12;
             // 
@@ -462,13 +462,13 @@
             // cmbMealplan
             // 
             this.cmbMealplan.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMealplan.BaseColor = System.Drawing.Color.White;
+            this.cmbMealplan.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.cmbMealplan.BorderColor = System.Drawing.Color.Silver;
             this.cmbMealplan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbMealplan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMealplan.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbMealplan.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbMealplan.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbMealplan.ForeColor = System.Drawing.Color.Black;
+            this.cmbMealplan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(55)))));
             this.cmbMealplan.FormattingEnabled = true;
             this.cmbMealplan.Items.AddRange(new object[] {
             "Type 1",
@@ -477,8 +477,8 @@
             "Type 4"});
             this.cmbMealplan.Location = new System.Drawing.Point(447, 693);
             this.cmbMealplan.Name = "cmbMealplan";
-            this.cmbMealplan.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbMealplan.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbMealplan.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.cmbMealplan.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbMealplan.Size = new System.Drawing.Size(263, 31);
             this.cmbMealplan.TabIndex = 12;
             // 

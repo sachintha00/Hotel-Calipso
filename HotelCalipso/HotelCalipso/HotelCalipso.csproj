@@ -55,6 +55,9 @@
     <Reference Include="SMDLogic">
       <HintPath>..\..\DLLS\SMDLogic.dll</HintPath>
     </Reference>
+    <Reference Include="SMDMessageBox">
+      <HintPath>..\..\DLLS\SMDMessageBox.dll</HintPath>
+    </Reference>
     <Reference Include="SMDMySQLDBManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLS\SMDMySQLDBManager.dll</HintPath>

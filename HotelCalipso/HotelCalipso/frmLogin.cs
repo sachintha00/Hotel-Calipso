@@ -32,7 +32,9 @@ namespace HotelCalipso
             }
             else if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
             {
-                
+                frmAdminMain obj = new frmAdminMain();
+                this.Hide();
+                obj.Show();
             }
             else
                 SMDMessage.show("Error", "Username or Password incorrect", SMDMessageBoxButtons.OK, SMDMessageBoxIcon.Error);
@@ -41,6 +43,11 @@ namespace HotelCalipso
         private void btnLogin_Click(object sender, EventArgs e)
         {
             login();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
         }
     }
 }

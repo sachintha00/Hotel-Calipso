@@ -85,7 +85,7 @@ namespace HotelCalipso
                     cmbBedType.SelectedIndex = -1;
                     cmbMealplan.SelectedIndex = -1;
                     cmbRoomType.SelectedIndex = -1;
-                    gmailSender.send("", "", "", "", "");
+                    gmailSender.send("hotelcalipsoonline@gmail.com", "password", "togmail", "subject", "body");
                     Alert.Show("success", "added success", Alert.AlertType.success, Color.FromArgb(240, 240, 240));
                 }
             }
