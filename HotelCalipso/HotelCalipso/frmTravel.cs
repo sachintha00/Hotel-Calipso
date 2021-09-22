@@ -52,7 +52,7 @@ namespace HotelCalipso
             {
                 int i = dbManager.insrtUpdteDelt("INSERT INTO " +
                                                 "`travel_package`" +
-                                                "(`fullname`, `nic`, `email`, `nationality`, `mobile`, `typeOfplace`) " +
+                                                "(`fullname`, `nic`, `travelemail`, `nationality`, `travelmobile`, `typeOfplace`) " +
                                                 "VALUES ('"+txtFullname.Text+"','"+txtNic.Text+"','"+txtEmail.Text+"','"+cmbNational.SelectedItem.ToString()+"','"+txtMobile.Text+"','"+cmbTravel.SelectedItem.ToString()+"')");
 
                 if (i != 0)

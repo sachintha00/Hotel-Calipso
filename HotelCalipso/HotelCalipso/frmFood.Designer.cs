@@ -84,6 +84,7 @@
             // 
             // imgFood1
             // 
+            this.imgFood1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgFood1.Location = new System.Drawing.Point(42, 139);
             this.imgFood1.Name = "imgFood1";
             this.imgFood1.Size = new System.Drawing.Size(172, 163);
@@ -93,6 +94,7 @@
             // 
             // imgFood2
             // 
+            this.imgFood2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgFood2.Location = new System.Drawing.Point(264, 139);
             this.imgFood2.Name = "imgFood2";
             this.imgFood2.Size = new System.Drawing.Size(172, 163);
@@ -102,6 +104,7 @@
             // 
             // imgFood3
             // 
+            this.imgFood3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgFood3.Location = new System.Drawing.Point(486, 139);
             this.imgFood3.Name = "imgFood3";
             this.imgFood3.Size = new System.Drawing.Size(172, 163);
@@ -111,6 +114,7 @@
             // 
             // imgFood4
             // 
+            this.imgFood4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgFood4.Location = new System.Drawing.Point(708, 139);
             this.imgFood4.Name = "imgFood4";
             this.imgFood4.Size = new System.Drawing.Size(172, 163);
