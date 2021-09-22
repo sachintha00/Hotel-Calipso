@@ -16,5 +16,32 @@ namespace HotelCalipso
         {
             InitializeComponent();
         }
+
+        private void login()
+        {
+
+            if (1 == DBManager.chek("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            {
+                passingRollName = DBManager.ReadValue("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 1);
+                passingRollId = DBManager.ReadValue("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 0);
+            }
+            else if (1 == DBManager.chek("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            {
+                passingRollName = DBManager.ReadValue("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 1);
+                passingRollId = DBManager.ReadValue("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 0);
+            }
+
+            if (!(passingRollName == "Error"))
+            {
+                this.Hide();
+                new frmLoard().Show();
+            }
+            else
+                SMDMessage.show("Error", "Username or Password incorrect", SMDMessageBoxButtons.OK, SMDMessageBoxIcon.Error);
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

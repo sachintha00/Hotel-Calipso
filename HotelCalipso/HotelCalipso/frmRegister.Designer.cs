@@ -176,7 +176,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.Location = new System.Drawing.Point(39, 357);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(263, 44);
             this.txtPassword.TabIndex = 8;
@@ -192,7 +192,7 @@
             this.txtCpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCpassword.Location = new System.Drawing.Point(378, 357);
             this.txtCpassword.Name = "txtCpassword";
-            this.txtCpassword.PasswordChar = '\0';
+            this.txtCpassword.PasswordChar = '*';
             this.txtCpassword.SelectedText = "";
             this.txtCpassword.Size = new System.Drawing.Size(263, 44);
             this.txtCpassword.TabIndex = 8;
