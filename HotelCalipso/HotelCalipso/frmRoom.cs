@@ -10,16 +10,19 @@ using System.Windows.Forms;
 using SMDValidation;
 using SMDMySQLDBManager;
 using SMDnotify;
+using SMDGmailSender;
 
 namespace HotelCalipso
 {
     public partial class frmRoom : Form
     {
         private SmdDbManager dbManager;
+        private GmailSender gmailSender;
         public frmRoom()
         {
             InitializeComponent();
             dbManager = new SmdDbManager("SERVER=127.0.0.1;PORT=3306;DATABASE=hotelcalipso;UID=root;PASSWORD=;");
+            gmailSender = new GmailSender();
         }
 
         private void frmRoom_Load(object sender, EventArgs e)
@@ -82,6 +85,7 @@ namespace HotelCalipso
                     cmbBedType.SelectedIndex = -1;
                     cmbMealplan.SelectedIndex = -1;
                     cmbRoomType.SelectedIndex = -1;
+                    gmailSender.send("","","","","");
                     Alert.Show("success", "added success", Alert.AlertType.success, Color.FromArgb(240, 240, 240));
                 }
             }
