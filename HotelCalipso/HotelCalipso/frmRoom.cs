@@ -90,5 +90,65 @@ namespace HotelCalipso
                 }
             }
         }
+
+        private void txtFirstname_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtFirstname.Text))
+                Validation.texBoxValidate(true, txtFirstname, lblFirstname);
+        }
+
+        private void txtLastname_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtLastname.Text))
+                Validation.texBoxValidate(true, txtLastname, lblLastname);
+        }
+
+        private void txtNic_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtNic.Text))
+                Validation.texBoxValidate(true, txtNic, lblNic);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtEmail.Text))
+                Validation.texBoxValidate(true, txtEmail, lblEmail);
+        }
+
+        private void txtCity_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtCity.Text))
+                Validation.texBoxValidate(true, txtCity, lblCity);
+        }
+
+        private void txtMobile_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtMobile.Text))
+                Validation.texBoxValidate(true, txtMobile, lblMobile);
+        }
+
+        private void txtTotalRoom_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtTotalRoom.Text))
+                Validation.texBoxValidate(true, txtTotalRoom, lblTotalRoom);
+        }
+
+        private void cmbRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbBedType.SelectedIndex != -1)
+                Validation.comboValidate(true, cmbBedType, lblBedType);
+        }
+
+        private void cmbBedType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbMealplan.SelectedIndex != -1)
+                Validation.comboValidate(true, cmbMealplan, lblMealPlan);
+        }
+
+        private void cmbMealplan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbRoomType.SelectedIndex != -1)
+                Validation.comboValidate(true, cmbRoomType, lblRoomType);
+        }
     }
 }

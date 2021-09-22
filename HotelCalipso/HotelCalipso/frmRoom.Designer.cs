@@ -226,6 +226,7 @@
             this.txtFirstname.SelectedText = "";
             this.txtFirstname.Size = new System.Drawing.Size(263, 44);
             this.txtFirstname.TabIndex = 10;
+            this.txtFirstname.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
             // 
             // txtLastname
             // 
@@ -242,6 +243,7 @@
             this.txtLastname.SelectedText = "";
             this.txtLastname.Size = new System.Drawing.Size(263, 44);
             this.txtLastname.TabIndex = 10;
+            this.txtLastname.TextChanged += new System.EventHandler(this.txtLastname_TextChanged);
             // 
             // lblLastname
             // 
@@ -268,6 +270,7 @@
             this.txtNic.SelectedText = "";
             this.txtNic.Size = new System.Drawing.Size(263, 44);
             this.txtNic.TabIndex = 10;
+            this.txtNic.TextChanged += new System.EventHandler(this.txtNic_TextChanged);
             // 
             // lblNic
             // 
@@ -294,6 +297,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(263, 44);
             this.txtEmail.TabIndex = 10;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
@@ -320,6 +324,7 @@
             this.txtCity.SelectedText = "";
             this.txtCity.Size = new System.Drawing.Size(263, 44);
             this.txtCity.TabIndex = 10;
+            this.txtCity.TextChanged += new System.EventHandler(this.txtCity_TextChanged);
             // 
             // lblCity
             // 
@@ -346,6 +351,7 @@
             this.txtMobile.SelectedText = "";
             this.txtMobile.Size = new System.Drawing.Size(263, 44);
             this.txtMobile.TabIndex = 10;
+            this.txtMobile.TextChanged += new System.EventHandler(this.txtMobile_TextChanged);
             // 
             // lblMobile
             // 
@@ -372,6 +378,7 @@
             this.txtTotalRoom.SelectedText = "";
             this.txtTotalRoom.Size = new System.Drawing.Size(263, 44);
             this.txtTotalRoom.TabIndex = 10;
+            this.txtTotalRoom.TextChanged += new System.EventHandler(this.txtTotalRoom_TextChanged);
             // 
             // lblTotalRoom
             // 
@@ -405,6 +412,7 @@
             this.cmbRoomType.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbRoomType.Size = new System.Drawing.Size(263, 31);
             this.cmbRoomType.TabIndex = 12;
+            this.cmbRoomType.SelectedIndexChanged += new System.EventHandler(this.cmbRoomType_SelectedIndexChanged);
             // 
             // lblRoomType
             // 
@@ -448,6 +456,7 @@
             this.cmbBedType.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbBedType.Size = new System.Drawing.Size(263, 31);
             this.cmbBedType.TabIndex = 12;
+            this.cmbBedType.SelectedIndexChanged += new System.EventHandler(this.cmbBedType_SelectedIndexChanged);
             // 
             // lblMealPlan
             // 
@@ -481,6 +490,7 @@
             this.cmbMealplan.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbMealplan.Size = new System.Drawing.Size(263, 31);
             this.cmbMealplan.TabIndex = 12;
+            this.cmbMealplan.SelectedIndexChanged += new System.EventHandler(this.cmbMealplan_SelectedIndexChanged);
             // 
             // btnSUbmit
             // 
