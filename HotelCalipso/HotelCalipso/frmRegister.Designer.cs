@@ -36,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSUbmit = new Guna.UI2.WinForms.Guna2Button();
             this.txtUsername = new Guna.UI.WinForms.GunaTextBox();
             this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
             this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
@@ -45,6 +44,7 @@
             this.lblEmail = new Guna.UI.WinForms.GunaLabel();
             this.lblPassword = new Guna.UI.WinForms.GunaLabel();
             this.lblCpassword = new Guna.UI.WinForms.GunaLabel();
+            this.btnSUbmit = new Guna.UI.WinForms.GunaButton();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -116,22 +116,6 @@
             this.label6.Size = new System.Drawing.Size(183, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "Comfirm Password";
-            // 
-            // btnSUbmit
-            // 
-            this.btnSUbmit.CheckedState.Parent = this.btnSUbmit;
-            this.btnSUbmit.CustomImages.Parent = this.btnSUbmit;
-            this.btnSUbmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.btnSUbmit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSUbmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.btnSUbmit.HoverState.Parent = this.btnSUbmit;
-            this.btnSUbmit.Location = new System.Drawing.Point(35, 484);
-            this.btnSUbmit.Name = "btnSUbmit";
-            this.btnSUbmit.ShadowDecoration.Parent = this.btnSUbmit;
-            this.btnSUbmit.Size = new System.Drawing.Size(228, 62);
-            this.btnSUbmit.TabIndex = 6;
-            this.btnSUbmit.Text = "SUBMIT";
-            this.btnSUbmit.Click += new System.EventHandler(this.btnSUbmit_Click);
             // 
             // txtUsername
             // 
@@ -237,11 +221,36 @@
             this.lblCpassword.Size = new System.Drawing.Size(0, 20);
             this.lblCpassword.TabIndex = 9;
             // 
+            // btnSUbmit
+            // 
+            this.btnSUbmit.AnimationHoverSpeed = 0.07F;
+            this.btnSUbmit.AnimationSpeed = 0.03F;
+            this.btnSUbmit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnSUbmit.BorderColor = System.Drawing.Color.Black;
+            this.btnSUbmit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSUbmit.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSUbmit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSUbmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnSUbmit.Image = null;
+            this.btnSUbmit.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSUbmit.Location = new System.Drawing.Point(39, 495);
+            this.btnSUbmit.Name = "btnSUbmit";
+            this.btnSUbmit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnSUbmit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSUbmit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSUbmit.OnHoverImage = null;
+            this.btnSUbmit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSUbmit.Size = new System.Drawing.Size(234, 62);
+            this.btnSUbmit.TabIndex = 10;
+            this.btnSUbmit.Text = "SUBMIT";
+            this.btnSUbmit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 617);
+            this.Controls.Add(this.btnSUbmit);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblCpassword);
             this.Controls.Add(this.lblPassword);
@@ -250,7 +259,6 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.btnSUbmit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -274,7 +282,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button btnSUbmit;
         private Guna.UI.WinForms.GunaLabel lblEmail;
         private Guna.UI.WinForms.GunaLabel lblCpassword;
         private Guna.UI.WinForms.GunaLabel lblPassword;
@@ -283,5 +290,6 @@
         private Guna.UI.WinForms.GunaTextBox txtPassword;
         private Guna.UI.WinForms.GunaTextBox txtEmail;
         private Guna.UI.WinForms.GunaTextBox txtUsername;
+        private Guna.UI.WinForms.GunaButton btnSUbmit;
     }
 }
