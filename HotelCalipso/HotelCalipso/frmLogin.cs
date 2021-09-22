@@ -24,15 +24,15 @@ namespace HotelCalipso
         private void login()
         {
 
-            if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' AND rollname = 'ADMIN'"))
             {
                 frmAdminMain obj = new frmAdminMain();
                 this.Hide();
                 obj.Show();
             }
-            else if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            else if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' AND rollname = 'USER'"))
             {
-                frmAdminMain obj = new frmAdminMain();
+                frmUserMain obj = new frmUserMain();
                 this.Hide();
                 obj.Show();
             }
