@@ -410,6 +410,11 @@
             this.cmbRoomType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbRoomType.ForeColor = System.Drawing.Color.Black;
             this.cmbRoomType.FormattingEnabled = true;
+            this.cmbRoomType.Items.AddRange(new object[] {
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4"});
             this.cmbRoomType.Location = new System.Drawing.Point(447, 570);
             this.cmbRoomType.Name = "cmbRoomType";
             this.cmbRoomType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -448,6 +453,11 @@
             this.cmbBedType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbBedType.ForeColor = System.Drawing.Color.Black;
             this.cmbBedType.FormattingEnabled = true;
+            this.cmbBedType.Items.AddRange(new object[] {
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4"});
             this.cmbBedType.Location = new System.Drawing.Point(39, 693);
             this.cmbBedType.Name = "cmbBedType";
             this.cmbBedType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -476,6 +486,11 @@
             this.cmbMealplan.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbMealplan.ForeColor = System.Drawing.Color.Black;
             this.cmbMealplan.FormattingEnabled = true;
+            this.cmbMealplan.Items.AddRange(new object[] {
+            "Type 1",
+            "Type 2",
+            "Type 3",
+            "Type 4"});
             this.cmbMealplan.Location = new System.Drawing.Point(447, 693);
             this.cmbMealplan.Name = "cmbMealplan";
             this.cmbMealplan.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));

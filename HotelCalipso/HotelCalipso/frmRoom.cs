@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDValidation;
+using SMDMySQLDBManager;
+using SMDnotify;
 
 namespace HotelCalipso
 {
     public partial class frmRoom : Form
     {
+        private SmdDbManager dbManager;
         public frmRoom()
         {
             InitializeComponent();
+            dbManager = new SmdDbManager("SERVER=127.0.0.1;PORT=3306;DATABASE=hotelcalipso;UID=root;PASSWORD=;");
         }
 
         private void frmRoom_Load(object sender, EventArgs e)
@@ -24,33 +29,59 @@ namespace HotelCalipso
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtCity.Text) && string.IsNullOrEmpty(txtEmail.Text) && string.IsNullOrEmpty(txtFirstname.Text) && string.IsNullOrEmpty(txtLastname.Text) && string.IsNullOrEmpty(cmbMealplan.Text) && string.IsNullOrEmpty(txtMobile.Text) && string.IsNullOrEmpty(txtNic.Text) && string.IsNullOrEmpty(txtTotalRoom.Text) && cmbBedType.SelectedIndex == -1)
+            if (string.IsNullOrEmpty(txtCity.Text) && string.IsNullOrEmpty(txtEmail.Text) && string.IsNullOrEmpty(txtFirstname.Text) && string.IsNullOrEmpty(txtLastname.Text) && string.IsNullOrEmpty(txtMobile.Text) && string.IsNullOrEmpty(txtNic.Text) && string.IsNullOrEmpty(txtTotalRoom.Text) && cmbBedType.SelectedIndex == -1 && cmbMealplan.SelectedIndex == -1 && cmbRoomType.SelectedIndex == -1)
             {
-                Validation.texBoxValidate(false, txtUsername, lblUsername, "Error");
+                Validation.texBoxValidate(false, txtCity, lblCity, "Error");
                 Validation.texBoxValidate(false, txtEmail, lblEmail, "Error");
-                Validation.texBoxValidate(false, txtPassword, lblPassword, "Error");
+                Validation.texBoxValidate(false, txtFirstname, lblFirstname, "Error");
+                Validation.texBoxValidate(false, txtLastname, lblLastname, "Error");
+                Validation.texBoxValidate(false, txtMobile, lblMobile, "Error");
+                Validation.texBoxValidate(false, txtNic, lblMobile, "Error");
+                Validation.texBoxValidate(false, txtTotalRoom, lblTotalRoom, "Error");
+                Validation.comboValidate(false, cmbBedType, lblBedType, "error");
+                Validation.comboValidate(false, cmbMealplan, lblMealPlan, "error");
+                Validation.comboValidate(false, cmbRoomType, lblRoomType, "error");
             }
-            else if (string.IsNullOrEmpty(txtUsername.Text))
-                Validation.texBoxValidate(false, txtUsername, lblUsername, "Error");
+            else if (string.IsNullOrEmpty(txtCity.Text))
+                Validation.texBoxValidate(false, txtCity, lblCity, "Error");
             else if (string.IsNullOrEmpty(txtEmail.Text))
                 Validation.texBoxValidate(false, txtEmail, lblEmail, "Error");
-            else if (string.IsNullOrEmpty(txtPassword.Text))
-                Validation.texBoxValidate(false, txtPassword, lblPassword, "Error");
-            else if (string.IsNullOrEmpty(txtCpassword.Text))
-                Validation.texBoxValidate(false, txtCpassword, lblCpassword, "cannot match password");
-            else if (txtCpassword.Text != txtPassword.Text)
-                Validation.texBoxValidate(false, txtCpassword, lblCpassword, "cannot match password");
+            else if (string.IsNullOrEmpty(txtFirstname.Text))
+                Validation.texBoxValidate(false, txtFirstname, lblFirstname, "Error");
+            else if (string.IsNullOrEmpty(txtLastname.Text))
+                Validation.texBoxValidate(false, txtLastname, lblLastname, "Error");
+            else if (string.IsNullOrEmpty(txtMobile.Text))
+                Validation.texBoxValidate(false, txtMobile, lblMobile, "Error");
+            else if (string.IsNullOrEmpty(txtNic.Text))
+                Validation.texBoxValidate(false, txtNic, lblMobile, "Error");
+            else if (string.IsNullOrEmpty(txtMobile.Text))
+                Validation.texBoxValidate(false, txtTotalRoom, lblTotalRoom, "Error");
+            else if (cmbBedType.SelectedIndex == -1)
+                Validation.comboValidate(false, cmbBedType, lblBedType, "error");
+            else if (cmbMealplan.SelectedIndex == -1)
+                Validation.comboValidate(false, cmbMealplan, lblMealPlan, "error");
+            else if (cmbRoomType.SelectedIndex == -1)
+                Validation.comboValidate(false, cmbRoomType, lblRoomType, "error");
             else
             {
-                int i = dbManager.insrtUpdteDelt("INSERT INTO `login`(`rollname`, `username`, `email`, `password`) " +
-                                                 "VALUES('USER','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtCpassword.Text + "')");
+                int i = dbManager.insrtUpdteDelt("INSERT INTO " +
+                                                "`roombo0king`" +
+                                                "(`firstname`, `lastname`, `email`, `city`, `mobile`, `roomtype`, `bedtype`, `nofroom`, `mealplan`) " +
+                                                "VALUES " +
+                                                "('"+txtFirstname.Text+ "','" + txtLastname.Text + "','" + txtEmail.Text + "','" + txtCity.Text + "','" + txtMobile.Text + "','" + cmbRoomType.SelectedItem.ToString() + "','"+cmbBedType.SelectedItem.ToString() + "', '"+txtTotalRoom.Text+"', '"+cmbMealplan.SelectedItem.ToString() + "')");
 
                 if (i != 0)
                 {
-                    txtUsername.Text = "";
+                    txtCity.Text = "";
                     txtEmail.Text = "";
-                    txtPassword.Text = "";
-                    txtCpassword.Text = "";
+                    txtFirstname.Text = "";
+                    txtLastname.Text = "";
+                    txtMobile.Text = "";
+                    txtNic.Text = "";
+                    txtTotalRoom.Text = "";
+                    cmbBedType.SelectedIndex = -1;
+                    cmbMealplan.SelectedIndex = -1;
+                    cmbRoomType.SelectedIndex = -1;
                     Alert.Show("success", "added success", Alert.AlertType.success, Color.FromArgb(240, 240, 240));
                 }
             }

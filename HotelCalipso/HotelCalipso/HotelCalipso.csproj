@@ -77,7 +77,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBManagercs.cs" />
     <Compile Include="frmAdminMain.cs">
       <SubType>Form</SubType>
     </Compile>
