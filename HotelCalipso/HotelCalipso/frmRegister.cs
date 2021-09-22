@@ -24,15 +24,15 @@ namespace HotelCalipso
             dbManager = new SmdDbManager("SERVER=127.0.0.1;PORT=3306;DATABASE=hotelcalipso;UID=root;PASSWORD=;");
         }
 
-        private void btnSUbmit_Click(object sender, EventArgs e)
+        private void btnSUbmit_Click_2(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtEmail.Text) && string.IsNullOrEmpty(txtPassword.Text))
             {
-                Validation.texBoxValidate(false,txtUsername, lblUsername, "Error");
-                Validation.texBoxValidate(false,txtEmail, lblEmail, "Error");
-                Validation.texBoxValidate(false,txtPassword, lblPassword, "Error");
+                Validation.texBoxValidate(false, txtUsername, lblUsername, "Error");
+                Validation.texBoxValidate(false, txtEmail, lblEmail, "Error");
+                Validation.texBoxValidate(false, txtPassword, lblPassword, "Error");
             }
-            else if(string.IsNullOrEmpty(txtUsername.Text))
+            else if (string.IsNullOrEmpty(txtUsername.Text))
                 Validation.texBoxValidate(false, txtUsername, lblUsername, "Error");
             else if (string.IsNullOrEmpty(txtEmail.Text))
                 Validation.texBoxValidate(false, txtEmail, lblEmail, "Error");
@@ -45,7 +45,7 @@ namespace HotelCalipso
             else
             {
                 int i = dbManager.insrtUpdteDelt("INSERT INTO `login`(`rollname`, `username`, `email`, `password`) " +
-                                                 "VALUES('USER','"+txtUsername.Text+"','"+txtEmail.Text+"','"+txtCpassword.Text+"')");
+                                                 "VALUES('USER','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtCpassword.Text + "')");
 
                 if (i != 0)
                 {
@@ -57,10 +57,6 @@ namespace HotelCalipso
                 }
             }
         }
-
-        private void btnSUbmit_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }

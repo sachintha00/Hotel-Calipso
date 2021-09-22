@@ -36,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.cmbBedType = new Guna.UI.WinForms.GunaComboBox();
             this.lblMealPlan = new Guna.UI.WinForms.GunaLabel();
             this.cmbMealplan = new Guna.UI.WinForms.GunaComboBox();
+            this.btnSUbmit = new Guna.UI.WinForms.GunaButton();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -134,22 +134,6 @@
             this.label6.Size = new System.Drawing.Size(154, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "Mobile Number";
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.CheckedState.Parent = this.btnSubmit;
-            this.btnSubmit.CustomImages.Parent = this.btnSubmit;
-            this.btnSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
-            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
-            this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(252, 831);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
-            this.btnSubmit.Size = new System.Drawing.Size(253, 62);
-            this.btnSubmit.TabIndex = 6;
-            this.btnSubmit.Text = "SUBMIT";
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label7
             // 
@@ -498,11 +482,37 @@
             this.cmbMealplan.Size = new System.Drawing.Size(263, 31);
             this.cmbMealplan.TabIndex = 12;
             // 
+            // btnSUbmit
+            // 
+            this.btnSUbmit.AnimationHoverSpeed = 0.07F;
+            this.btnSUbmit.AnimationSpeed = 0.03F;
+            this.btnSUbmit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnSUbmit.BorderColor = System.Drawing.Color.Black;
+            this.btnSUbmit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSUbmit.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSUbmit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSUbmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
+            this.btnSUbmit.Image = null;
+            this.btnSUbmit.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSUbmit.Location = new System.Drawing.Point(252, 821);
+            this.btnSUbmit.Name = "btnSUbmit";
+            this.btnSUbmit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(36)))), ((int)(((byte)(83)))));
+            this.btnSUbmit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSUbmit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSUbmit.OnHoverImage = null;
+            this.btnSUbmit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSUbmit.Size = new System.Drawing.Size(253, 62);
+            this.btnSUbmit.TabIndex = 13;
+            this.btnSUbmit.Text = "SUBMIT";
+            this.btnSUbmit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSUbmit.Click += new System.EventHandler(this.btnSUbmit_Click_1);
+            // 
             // frmRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 919);
+            this.Controls.Add(this.btnSUbmit);
             this.Controls.Add(this.cmbMealplan);
             this.Controls.Add(this.cmbBedType);
             this.Controls.Add(this.cmbRoomType);
@@ -523,7 +533,6 @@
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtNic);
             this.Controls.Add(this.txtFirstname);
-            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -554,7 +563,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
@@ -581,5 +589,6 @@
         private Guna.UI.WinForms.GunaTextBox txtCity;
         private Guna.UI.WinForms.GunaTextBox txtNic;
         private Guna.UI.WinForms.GunaTextBox txtFirstname;
+        private Guna.UI.WinForms.GunaButton btnSUbmit;
     }
 }

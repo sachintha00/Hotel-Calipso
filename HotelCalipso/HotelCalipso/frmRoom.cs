@@ -30,7 +30,7 @@ namespace HotelCalipso
 
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void btnSUbmit_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtCity.Text) && string.IsNullOrEmpty(txtEmail.Text) && string.IsNullOrEmpty(txtFirstname.Text) && string.IsNullOrEmpty(txtLastname.Text) && string.IsNullOrEmpty(txtMobile.Text) && string.IsNullOrEmpty(txtNic.Text) && string.IsNullOrEmpty(txtTotalRoom.Text) && cmbBedType.SelectedIndex == -1 && cmbMealplan.SelectedIndex == -1 && cmbRoomType.SelectedIndex == -1)
             {
@@ -71,7 +71,7 @@ namespace HotelCalipso
                                                 "`roombo0king`" +
                                                 "(`firstname`, `lastname`, `email`, `city`, `mobile`, `roomtype`, `bedtype`, `nofroom`, `mealplan`) " +
                                                 "VALUES " +
-                                                "('"+txtFirstname.Text+ "','" + txtLastname.Text + "','" + txtEmail.Text + "','" + txtCity.Text + "','" + txtMobile.Text + "','" + cmbRoomType.SelectedItem.ToString() + "','"+cmbBedType.SelectedItem.ToString() + "', '"+txtTotalRoom.Text+"', '"+cmbMealplan.SelectedItem.ToString() + "')");
+                                                "('" + txtFirstname.Text + "','" + txtLastname.Text + "','" + txtEmail.Text + "','" + txtCity.Text + "','" + txtMobile.Text + "','" + cmbRoomType.SelectedItem.ToString() + "','" + cmbBedType.SelectedItem.ToString() + "', '" + txtTotalRoom.Text + "', '" + cmbMealplan.SelectedItem.ToString() + "')");
 
                 if (i != 0)
                 {
@@ -85,7 +85,7 @@ namespace HotelCalipso
                     cmbBedType.SelectedIndex = -1;
                     cmbMealplan.SelectedIndex = -1;
                     cmbRoomType.SelectedIndex = -1;
-                    gmailSender.send("","","","","");
+                    gmailSender.send("", "", "", "", "");
                     Alert.Show("success", "added success", Alert.AlertType.success, Color.FromArgb(240, 240, 240));
                 }
             }

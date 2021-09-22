@@ -8,34 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SMDMessageBox;
+using SMDMySQLDBManager;
 
 namespace HotelCalipso
 {
     public partial class frmLogin : Form
     {
+        private SmdDbManager dbManager;
         public frmLogin()
         {
             InitializeComponent();
+            dbManager = new SmdDbManager("SERVER=127.0.0.1;PORT=3306;DATABASE=hotelcalipso;UID=root;PASSWORD=;");
         }
 
         private void login()
         {
 
-            if (1 == DBManager.chek("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
             {
-                passingRollName = DBManager.ReadValue("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 1);
-                passingRollId = DBManager.ReadValue("SELECT * FROM other_staff_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 0);
-            }
-            else if (1 == DBManager.chek("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
-            {
-                passingRollName = DBManager.ReadValue("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 1);
-                passingRollId = DBManager.ReadValue("SELECT * FROM student_account WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' ", 0);
-            }
-
-            if (!(passingRollName == "Error"))
-            {
+                frmAdminMain obj = new frmAdminMain();
                 this.Hide();
-                new frmLoard().Show();
+                obj.Show();
+            }
+            else if (1 == dbManager.chek("SELECT * FROM `login` WHERE username = '" + txtUsername.Text + "' AND password = '" + txtPassword.Text + "' "))
+            {
+                
             }
             else
                 SMDMessage.show("Error", "Username or Password incorrect", SMDMessageBoxButtons.OK, SMDMessageBoxIcon.Error);
@@ -43,7 +40,7 @@ namespace HotelCalipso
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            login();
         }
     }
 }

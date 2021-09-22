@@ -244,6 +244,7 @@
             this.btnSUbmit.TabIndex = 10;
             this.btnSUbmit.Text = "SUBMIT";
             this.btnSUbmit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSUbmit.Click += new System.EventHandler(this.btnSUbmit_Click_2);
             // 
             // frmRegister
             // 
