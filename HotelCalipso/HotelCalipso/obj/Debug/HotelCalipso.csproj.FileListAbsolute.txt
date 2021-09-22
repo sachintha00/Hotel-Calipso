@@ -22,3 +22,5 @@ E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\Hotel
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\obj\Debug\HotelCalipso.frmTravel.resources
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\MySql.Data.DLL
 E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\SMDMySQLDBManager.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\SMDValidation.dll
+E:\C# PROJECTS\gitUpload\Hotel-Calipso\HotelCalipso\HotelCalipso\bin\Debug\Renci.SshNet.dll

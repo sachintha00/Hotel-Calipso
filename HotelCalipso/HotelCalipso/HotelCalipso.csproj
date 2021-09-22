@@ -46,14 +46,21 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\SMDMySQLDBManager\MySql.Data.DLL</HintPath>
     </Reference>
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\..\DLLS\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="SMDLogic">
       <HintPath>..\..\DLLS\SMDLogic.dll</HintPath>
     </Reference>
-    <Reference Include="SMDMySQLDBManager">
-      <HintPath>..\..\..\SMDMySQLDBManager.dll</HintPath>
+    <Reference Include="SMDMySQLDBManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\SMDMySQLDBManager.dll</HintPath>
     </Reference>
     <Reference Include="SMDnotify">
       <HintPath>..\..\DLLS\SMDnotify.dll</HintPath>
+    </Reference>
+    <Reference Include="SMDValidation">
+      <HintPath>..\..\DLLS\SMDValidation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
