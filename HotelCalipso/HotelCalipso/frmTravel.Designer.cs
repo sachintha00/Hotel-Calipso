@@ -203,6 +203,7 @@
             this.txtNic.SelectedText = "";
             this.txtNic.Size = new System.Drawing.Size(272, 44);
             this.txtNic.TabIndex = 12;
+            this.txtNic.TextChanged += new System.EventHandler(this.txtNic_TextChanged);
             // 
             // lblNic
             // 
@@ -229,6 +230,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(360, 44);
             this.txtEmail.TabIndex = 12;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
@@ -255,6 +257,7 @@
             this.txtMobile.SelectedText = "";
             this.txtMobile.Size = new System.Drawing.Size(263, 44);
             this.txtMobile.TabIndex = 12;
+            this.txtMobile.TextChanged += new System.EventHandler(this.txtMobile_TextChanged);
             // 
             // lblMobile
             // 
@@ -288,6 +291,7 @@
             this.cmbNational.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbNational.Size = new System.Drawing.Size(178, 31);
             this.cmbNational.TabIndex = 15;
+            this.cmbNational.SelectedIndexChanged += new System.EventHandler(this.cmbNational_SelectedIndexChanged);
             // 
             // lblNational
             // 
@@ -331,6 +335,7 @@
             this.cmbTravel.OnHoverItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(20)))));
             this.cmbTravel.Size = new System.Drawing.Size(272, 31);
             this.cmbTravel.TabIndex = 15;
+            this.cmbTravel.SelectedIndexChanged += new System.EventHandler(this.cmbTravel_SelectedIndexChanged);
             // 
             // frmTravel
             // 

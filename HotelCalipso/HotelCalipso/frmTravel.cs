@@ -72,7 +72,37 @@ namespace HotelCalipso
         private void txtFullname_TextChanged(object sender, EventArgs e)
         {
             if(!string.IsNullOrEmpty(txtFullname.Text))
+                Validation.texBoxValidate(true, txtFullname, lblFullname);
+        }
+
+        private void txtNic_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtNic.Text))
+                Validation.texBoxValidate(true, txtNic, lblNic);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtEmail.Text))
                 Validation.texBoxValidate(true, txtEmail, lblEmail);
+        }
+
+        private void txtMobile_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtMobile.Text))
+                Validation.texBoxValidate(true, txtMobile, lblMobile);
+        }
+
+        private void cmbNational_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNational.SelectedIndex != -1)
+                Validation.comboValidate(true, cmbNational, lblNational);
+        }
+
+        private void cmbTravel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTravel.SelectedIndex != -1)
+                Validation.comboValidate(true, cmbTravel, lblTravel);
         }
     }
 }
